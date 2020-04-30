@@ -202,7 +202,6 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - /resetmenu -> Set menu's position back to default.
         - /lastactions -> To see your last actions. 
         - /blackjack -> To start a blackjack match. 
-        - /duty -> To go on duty. 
     - Titles    
         - /mytitles -> To check your titles, and set it.
         - /mycustomtitles -> To check your titles, and set it.
@@ -229,6 +228,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - 0 for permenannt ban.
     - !/bancheck -> Details of a ban.
     - !/ipbancheck -> List of all bans with these ips/range.   
+    - /duty -> To go on duty. 
 - Admins
     - /unignore -> To remove anyone from someone's ignore list.
     - !/jail -> To jail and again to un-jail.
