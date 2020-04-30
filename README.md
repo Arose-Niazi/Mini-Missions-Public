@@ -1,5 +1,3 @@
-# Mulit-Missions-Public
-Backup script for Mini-Missions
 
 # Multi Missions v1
 Developed By Arose Niazi (Sasuke_Uchiha)
@@ -20,13 +18,13 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - Auto-Login can be enabled or disabled by settings, set to enabled by default.
 
 ### Stats
-- Players stats are saved on a criteria of
+- Players stats are saved on criteria of
     - Per Year
     - Per Month
     - Per Mission
 - Stats are saved before a mission starts, and after you pass your mission.
-    - Saving twice so data of lobby could be seprated from mission.
-- On server being closed manually your data will also get saved.       
+    - Saving twice so data of lobby could be separated from the mission.
+- On server being closed manually, your data will also get saved.       
 
 ### Chatbox
 - Server message sync to Discord.
@@ -76,27 +74,27 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - Open vote.
 - Random cycle.
 - Random cycle 2.
-- Default cycle would be the random cycle.
-- Made sure server doesn't get stuck even if there is one/no mission in the server. 
+- The default cycle would be the random cycle.
+- Made sure the server doesn't get stuck even if there is one/no mission in the server. 
 - mforce,m(next)mission is for must force, it will force the mission even if it's disabled. So this means event maps like duels can be added.  
-- New missions added, or any change done to missions via UCP will take effect in a 5 mins timer which runs and checks all missions. 
+- New missions added, or any change done to missions via UCP will take effect in a 5 mins timer that runs and checks all missions. 
 - Setting world weather and world time as -1 to set random world weather and world time.
 - Scripter/Mapper name can now use their account ID, this way maps of user can be tracked along with nick changes.
 
 ### Mission Handler
 - Loading and unloading of missions.
 - Working timer for mission time.
-- Loading next mission should take around 1 seconds at max.
+- Loading the next mission should take around 1 second at max.
 
 ### Mission Types
 - Race Type. -> 0
 
 ### Personal Best / Race Records / Top 5
 - Your personal best for each mission will be recorded, missions where you have to race with others. This will be used in race records.
-- Top 5 times will be shown in records board for a mission. 
-- Breaking and making record has different rewards.
-- Breaking 5th record will be considered as making reward, while any other will be breaking.
-- You get reward for improving your record. 
+- Top 5 times will be shown in the records board for a mission. 
+- Breaking and making a record has different rewards.
+- Breaking 5th record will be considered as making a reward, while any other will be breaking.
+- You get a reward for improving your record. 
 
 ### Ranks
 - Regular Player.
@@ -111,7 +109,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 #### VIP
 - Skip mission by pressing escape on mission info dialog. 
 
-#### Modeartors
+#### Moderators
 - Skip mission by pressing escape on mission info dialog. 
 - Duty mode will hide you from non-moderator players. 
 - Duty mode gives unlimited health.
@@ -132,17 +130,17 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 
 ### Levels system
 - XP.
-- Each level has it's own XP level up, and every level can have different XP level up. Even some higher levels can have very low XP level up. 
+- Each level has it's own XP level up, and every level can have different XP level up. Even some higher levels can have a very low XP level up. 
 
 ### World Weather/Time
 - Random world weather when -1.
 - Random Mission weather when -1. 
-- There are specific random weathers which will be selected.
-- Mission Info dialog, would say weather name instead of weather id. 
+- There are specific random weathers that will be selected.
+- Mission Info dialog would say weather name instead of weather id. 
     - Thanks to @Ryses for weather names.
 
 ### Money system
-- On completing/winning a race, parkour, and etc You get 100/Your Position.    
+- On completing/winning a race, parkour, etc You get 100/Your Position.    
 
 ### Betting system
 - You can place a bet, before the start of the mission objective.
@@ -152,33 +150,33 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Your Betting Money. 
     - Bot bet rate. 
     - Formula used; | Your bet + ((Your bet)[(Bot Bet Rate) + (Your level / 50) ]) | ~ Then rounding it off to nearest decimal place. 
-- Maximum bet is $50 and the minimum is $1.
+- The maximum bet is $50 and the minimum is $1.
 
 ### Titles System
-- Titles have their own color.
-- Titles have their own position, suffix or prefix.
+- Titles have their color.
+- Titles have their position, suffix, or prefix.
 - You can remove/change your title from /settings.
-- Titles are saved in database, so can be added/changed/deleted without restart.
-- Custom titles are saved in database, but have been limited to 1 per player which can easily be changed. 
+- Titles are saved in the database, so they can be added/changed/deleted without a restart.
+- Custom titles are saved in the database but have been limited to 1 per player which can easily be changed. 
 
 ### Tab list
 - Each player can decide what tab list they want to see.
 - Tab list for total XP.
-- Tab list for mission data i.e mission kills,checkpoints,position etc depending on mission's objective.
+- Tab list for mission data i.e mission kills, checkpoints, position, etc depending on mission's objective.
 - Tab list can be changed from /settings.
 
 ### Time
-- Player's GMT will be zero by default. Player will be asked to set his GMT offset as soon as they register.
+- The Player's GMT will be zero by default. The player will be asked to set his GMT offset as soon as they register.
     - Skipping this will set it to zero too.
-- Player can change it anytime from /settings
-- All times in the server will be show according to players GMT. 
-- All times are saved according to server's current host location, when player's GMT data won't be available the time will be displayed according to server's location.
+- The player can change it anytime from /settings
+- All times in the server will be shown according to the player's GMT. 
+- All times are saved according to the server's current host location when the player's GMT data won't be available the time will be displayed according to the server's location.
 
 ### Actions
-- Players important actions will be logged.
-- These are stored in database.
+- Players' important actions will be logged.
+- These are stored in the database.
 - Actions store date and time so are useful to find out a specific event.
-- Player can view his 15 last actions.
+- The player can view his 15 last actions.
     - This will display only the actions from the time player has been connected i.e current session.
     - Moderators+ can view anyone's actions.
 - Actions logged are;
@@ -263,7 +261,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - !/addcustomtitle -> Add Custom title for a player
         - Make sure to enter hex as color code without #
         - Place, 0 for Prefix, and 1 for Suffix.
-        - Title should be more than 2 words, and less than 30. More than 30 will cut off. 
+        - The title should be more than 2 words, and less than 30. More than 30 will cut off. 
 
 ### Bans
 - Nick Ban
@@ -293,8 +291,8 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 ### Extra
 - The San Andreas theme song will stop playing after 30 seconds of starting. 
 - For online player commands.
-    - Part of name.
-        - Can be any postion i.e. for Sasuke using ke will work too.
+    - Part of the name.
+        - Can be any position i.e. for Sasuke using ke will work too.
     - ID.
     - Complete name. 
 - For offline player commands.
