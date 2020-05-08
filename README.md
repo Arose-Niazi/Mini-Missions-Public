@@ -208,7 +208,16 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - Once reached maximum warnings.
     - 3 Days ban.
     - All warnings will be removed. 
-- A warning even after being removed remains in the database.             
+- A warning even after being removed remains in the database. 
+
+### Reports System
+- The last 10 reports are visible to admin.
+- 3 Reports per minute to avoid spam.
+- A successful ban on report leads to rewards.
+    - Cookies (Rare).
+    - Achievement (Exteremely Rare).
+    - Money (Common)
+    - XP (Common)
 
 
 ### Commands
@@ -220,6 +229,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - /lastactions -> To see your last actions. 
         - /blackjack -> To start a blackjack match. 
         - /warn(ing)s -> Check your warnings.
+        - /report -> To report a player.
     - Titles    
         - /mytitles -> To check your titles, and set it.
         - /mycustomtitles -> To check your titles, and set it.
@@ -253,6 +263,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - !/slap -> To slap a player.
     - !/hammer -> To reduce a players health by 30.
     - /goto -> Teleport to another player's location.
+    - /reports -> To check last reports.
 - Admins
     - /unignore -> To remove anyone from someone's ignore list.
     - !/jail -> To jail and again to un-jail.
