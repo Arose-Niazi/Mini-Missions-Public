@@ -7,6 +7,8 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - Spawns in lobby normally.
 - Location: LS Atrium
 - You can exit lobby to the world of free-roam.
+- You can spawn one vehicle.
+- You can remove the vehicle. 
 
 ### Login/Register.
 - Auto-Login.
@@ -67,6 +69,8 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - XP Gained.
 - Cool menu. 
     - Made by @Ziggi
+- Objective.    
+- Warnings.
 
 ### Cycle Handler
 - Votemode.
@@ -189,10 +193,23 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Blackjack Games (Type: Gambling)
     - Kicks (Type: Admin)
     - Bans (Type: Admin)
+    - Remove Warning (Type: Admin)
+    - Cage (Type: Admin)
+    - Slap (Type: Admin)
 
 ### Blackjack;
 - Max bet is $100.
 - Min bet is $1.
+
+
+### Warns System
+- Maximum 5 warnings.
+- The warning textdraw will be shown for 20 seconds.
+- Once reached maximum warnings.
+    - 3 Days ban.
+    - All warnings will be removed. 
+- A warning even after being removed remains in the database.             
+
 
 ### Commands
 - Players
@@ -202,6 +219,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - /resetmenu -> Set menu's position back to default.
         - /lastactions -> To see your last actions. 
         - /blackjack -> To start a blackjack match. 
+        - /warn(ing)s -> Check your warnings.
     - Titles    
         - /mytitles -> To check your titles, and set it.
         - /mycustomtitles -> To check your titles, and set it.
@@ -214,7 +232,9 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Mission
         - /dpersonalbest -> Used to remove your personal best/record for that mission. 
         - /bet -> To place bet on a player for winning the mission.
-
+    - Lobby
+        - /v -> Spawn Vehicle.
+        - /remove -> Remove vehicle.    
 - Moderators
     - !/mute  -> Use it once to mute and then again to un-mute.
     - /ignorelist -> To check anyone's ignore list.
@@ -229,6 +249,8 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - !/bancheck -> Details of a ban.
     - !/ipbancheck -> List of all bans with these ips/range.   
     - /duty -> To go on duty. 
+    - /warn(ing)s -> Check anyone's warnings.
+    - !/slap -> To slap a player.
 - Admins
     - /unignore -> To remove anyone from someone's ignore list.
     - !/jail -> To jail and again to un-jail.
@@ -240,6 +262,14 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - !/forceend (!/fend) -> Skip Mission.
     - !/oban -> Offline Ban.
     - !/unban -> Complete unabn for a player.
+    - !/warn -> Give player a warning. 
+    - !d(elete)warn -> Remove a warning.
+    - !/owarn -> Give offline player a warning.
+    - !/explode -> Explodes player.
+    - !/(un)cage -> cage/uncage player.
+    - !/slapall -> Slap everyone.
+    - /v -> Spawn Vehicle.
+    - /remove -> Remove vehicle.
 - Head Admins
     - /!votemode(2) (vm)(2) -> Will set the mission selection mode.
     - /!randomcycle2 - /!rc2 - !/rcycle2 -> Will set the mission selection mode.
@@ -249,6 +279,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - 1 = Small Range
         - 2 = Big Range
     - !/unbanrange -> Unban range.
+    - !/explodeall -> Explodes everyone in server.
 - Managers
     - !/(un)jailall -> To jail/unjail all players, currently logged in.
     - !/setrank / !/makeadmin -> To set player as staff member or retired staff.
