@@ -65,7 +65,6 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Made by @TheChaoz
 - Infobox.
 - Total XP, Current XP, and Current Level. 
-    - Made by @TheChaoz
 - XP Gained.
 - Cool menu. 
     - Made by @Ziggi
@@ -196,6 +195,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Remove Warning (Type: Admin)
     - Cage (Type: Admin)
     - Slap (Type: Admin)
+    - Hammer (Type: Admin)
 
 ### Blackjack;
 - Max bet is $100.
@@ -251,6 +251,8 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - /duty -> To go on duty. 
     - /warn(ing)s -> Check anyone's warnings.
     - !/slap -> To slap a player.
+    - !/hammer -> To reduce a players health by 30.
+    - /goto -> Teleport to another player's location.
 - Admins
     - /unignore -> To remove anyone from someone's ignore list.
     - !/jail -> To jail and again to un-jail.
@@ -270,6 +272,10 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - !/slapall -> Slap everyone.
     - /v -> Spawn Vehicle.
     - /remove -> Remove vehicle.
+    - /get -> Teleport player to your location.
+    - /gotoxyz -> Teleport to anywhere in map.
+    - /setinterior -> Set player's interior.
+    - /setvirualworld -> Set player's virtual world. 
 - Head Admins
     - /!votemode(2) (vm)(2) -> Will set the mission selection mode.
     - /!randomcycle2 - /!rc2 - !/rcycle2 -> Will set the mission selection mode.
