@@ -57,19 +57,25 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - Missions Info. 
     - Made by @TheChaoz
 - New clock.
-- Countdown 3-Go!. 
+    - Made By @Bullet
+- Countdown. 
     - Made by @TheChaoz
-- Pos o Meter, Personal best and checkpoints. 
-    - Made by @TheChaoz
-- Records/Top 5. 
-    - Made by @TheChaoz
+- Pos o Meter, checkpoints. 
+    - Made by @Bullet
+- Ghost Mode.
+    - Made by @Bullet    
 - Infobox.
 - Total XP, Current XP, and Current Level. 
+    - Current XP/Level
+        - Bullet
 - XP Gained.
 - Cool menu. 
     - Made by @Ziggi
-- Objective.    
+- Objective.   
+    - Made by @Bullet     
 - Warnings.
+- Spectate
+    - Made by @Bullet
 
 ### Cycle Handler
 - Votemode.
@@ -91,10 +97,21 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 
 ### Mission Types
 - Race Type. -> 0
+- LTS Type. -> 5
+- TDM Type. -> 6
+- Parkour Type. -> 7
+
+
+### TDM 
+- A champion will be selected from the winning team, the player with best K/D ratio.
+- Reward for champion, $25 and a cookie. 
+
+### LTS 
+- A champion will be selected from the winning team, the player with most kills.
+- Reward for champion, $25 and a cookie. 
 
 ### Personal Best / Race Records / Top 5
 - Your personal best for each mission will be recorded, missions where you have to race with others. This will be used in race records.
-- Top 5 times will be shown in the records board for a mission. 
 - Breaking and making a record has different rewards.
 - Breaking 5th record will be considered as making a reward, while any other will be breaking.
 - You get a reward for improving your record. 
@@ -146,7 +163,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
 - On completing/winning a race, parkour, etc You get 100/Your Position.    
 
 ### Betting system
-- You can place a bet, before the start of the mission objective.
+- You can place a bet, in first 20 seconds.
 - If online players are less than 7, you can not place your bets.
 - Bets outcome depends on the following factors;
     - Your level / 50.
@@ -154,6 +171,11 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Bot bet rate. 
     - Formula used; | Your bet + ((Your bet)[(Bot Bet Rate) + (Your level / 50) ]) | ~ Then rounding it off to nearest decimal place. 
 - The maximum bet is $50 and the minimum is $1.
+- Bet Winners;
+    - Race -> 1st Pos.
+    - Parkour -> 1st Pos.
+    - TDM -> Champion.
+    - LTS -> Champion.
 
 ### Titles System
 - Titles have their color.
@@ -196,6 +218,7 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Cage (Type: Admin)
     - Slap (Type: Admin)
     - Hammer (Type: Admin)
+    - Cookies (Type: Cookies)
 
 ### Blackjack;
 - Max bet is $100.
@@ -219,6 +242,25 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - Money (Common)
     - XP (Common)
 
+### Private Message
+- Can't be send to players you are ignoring. 
+- Can't recieve from players you are ignoring.
+- Can be disabled.
+    - Still staff members can send you pm. 
+
+### Cookies
+- Logged in actions.
+- Ways to earn;
+    - Win Mission.   
+    - Report players.  
+- Cookies can be bought/sold from/to players.
+    - Min Sell Amount $0.
+    - Max Sell Amount $1000.    
+
+### Spectate
+- Spectate in no respawn missions.
+- Spectate team only option available.
+- Spectate might take 1 second to update things. 
 
 ### Commands
 - Players
@@ -227,7 +269,6 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - /discord -> To connect your account with your discord nick-name. 
         - /resetmenu -> Set menu's position back to default.
         - /lastactions -> To see your last actions. 
-        - /blackjack -> To start a blackjack match. 
         - /warn(ing)s -> Check your warnings.
         - /report -> To report a player.
     - Titles    
@@ -236,21 +277,28 @@ Developed By Arose Niazi (Sasuke_Uchiha)
         - /titles -> To check your or anyone's titles. This includes custom titles and simple titles. 
     - Chat
         - !s(ay) -> To send message to server from discord.
-    - Ignore System
+        - /privatemessage - /pm - /m(essage) -> Send private message.
+        - /r(eply) -> Reply to last private message.
+        - /nopm -> Disable/Enable private messages.
         - /ignore -> To add/remove players to your ignore list.
         - /ignorelist -> To check your ignore list.
     - Mission
         - /dpersonalbest -> Used to remove your personal best/record for that mission. 
         - /bet -> To place bet on a player for winning the mission.
+        - /cycle -> To see next mission.
     - Lobby
         - /v -> Spawn Vehicle.
-        - /remove -> Remove vehicle.    
+        - /remove -> Remove vehicle.  
+        - /blackjack -> To start a blackjack match. 
+    - Cookies
+        - /sellcookies -> To put your cookies on sale.
+        - /buycookies -> To purcahse cookies from other players.  
 - Moderators
     - !/mute  -> Use it once to mute and then again to un-mute.
     - /ignorelist -> To check anyone's ignore list.
     - !/jailed -> To see a list of jailed players.
     - /lastactions -> To check players last actions. 
-    - /!Kick -> Remove a player from server.
+    - /!kick -> Remove a player from server.
     - /!nickcheck -> Get inforamtion about username.
     - /!idcheck -> Get information about account id.
     - !/ban -> Baning player.
@@ -264,6 +312,10 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - !/hammer -> To reduce a players health by 30.
     - /goto -> Teleport to another player's location.
     - /reports -> To check last reports.
+    - /spec(tate) -> To spectate a player.
+    - /spectateoff - /specoff -> To turn off spectating.
+    - /spec(tate)objective - /so -> To spectate objective.
+    - /specv -> To spectate vehicle
 - Admins
     - /unignore -> To remove anyone from someone's ignore list.
     - !/jail -> To jail and again to un-jail.
@@ -336,8 +388,25 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - adv = advertising
 
 
+### Vehicles
+- Players can spawn vehicles in freeroam as well.
+- Remove will delete players vehicle.
+- After 20 mins, if vehicles are empty those will be deleted. 
+
+### Barrels 
+- Enabled in races, chance of being enabled 1/3.
+- Base price $10.
+- Price goes up by twice each time a barrel is dropped.
+- 35 seconds after mission starts barrels can be dropped.
+- 15 seconds cool down time between barrels.
+- Maximum 40 barrels are allowed in the mission.  
+
+### XP 
+- On Dropping Barrel
+    - 2 XP.
+
 ### Extra
-- The San Andreas theme song will stop playing after 30 seconds of starting. 
+- The San Andreas theme song will stop playing after being spawned. 
 - For online player commands.
     - Part of the name.
         - Can be any position i.e. for Sasuke using ke will work too.
@@ -355,3 +424,4 @@ Developed By Arose Niazi (Sasuke_Uchiha)
     - IP
     - Range
     - Serial
+    
